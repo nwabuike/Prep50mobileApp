@@ -21,7 +21,6 @@ class CreateTopicsTable extends Migration
             $table->bigInteger('subj_id')->unsigned();     
             
             $table->foreign('subj_id')->references('id')->on('subjects')->onUpdate('cascade');
-            $table->foreign('subj_id')->references('id')->on('subjects')->onDelete('cascade');
         });
     }
 

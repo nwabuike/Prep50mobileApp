@@ -43,10 +43,10 @@ class CreateUsersTable extends Migration
             $table->foreign('university_id')->references('id')->on('universities')->onUpdate('cascade');
             $table->foreign('department_id')->references('id')->on('departments')->onUpdate('cascade');
 
-            $table->foreign('state_id')->references('id')->on('states')->onDelete('cascade');
-            $table->foreign('polytechnic_id')->references('id')->on('polytechnics')->onDelete('cascade');
-            $table->foreign('university_id')->references('id')->on('universities')->onDelete('cascade');
-            $table->foreign('department_id')->references('id')->on('departments')->onDelete('cascade');
+            // $table->foreign('state_id')->references('id')->on('states')->onDelete('cascade');
+            // $table->foreign('polytechnic_id')->references('id')->on('polytechnics')->onDelete('cascade');
+            // $table->foreign('university_id')->references('id')->on('universities')->onDelete('cascade');
+            // $table->foreign('department_id')->references('id')->on('departments')->onDelete('cascade');
         });
     }
 

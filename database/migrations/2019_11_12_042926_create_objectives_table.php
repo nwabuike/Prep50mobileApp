@@ -23,8 +23,8 @@ class CreateObjectivesTable extends Migration
             
             $table->foreign('topic_id')->references('id')->on('topics')->onUpdate('cascade');
             $table->foreign('subject_id')->references('id')->on('subjects')->onUpdate('cascade');
-            $table->foreign('topic_id')->references('id')->on('topics')->onDelete('cascade');
-            $table->foreign('subject_id')->references('id')->on('subjects')->onDelete('cascade');
+            // $table->foreign('topic_id')->references('id')->on('topics')->onDelete('cascade');
+            // $table->foreign('subject_id')->references('id')->on('subjects')->onDelete('cascade');
         });
     }
 

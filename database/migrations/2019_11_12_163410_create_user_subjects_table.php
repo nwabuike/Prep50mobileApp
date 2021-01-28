@@ -20,7 +20,7 @@ class CreateUserSubjectsTable extends Migration
             $table->bigInteger('subject_id')->unsigned(); 
             
             $table->foreign('user_id')->references('id')->on('users')->onUpdate('cascade');
-            $table->foreign('user_id')->references('id')->on('users')->onDelete('cascade');
+            // $table->foreign('user_id')->references('id')->on('users')->onDelete('cascade');
             $table->foreign('subject_id')->references('id')->on('subjects')->onUpdate('cascade');
         });
     }
