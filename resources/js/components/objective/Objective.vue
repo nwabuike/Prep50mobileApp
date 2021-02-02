@@ -101,7 +101,7 @@ export default {
   methods: {
     getSubj(event) {
       let subjectId = event.target.value;
-      this.axios.get(`api/TopicsInSubjects/${subjectId}`).then((res) => {
+      this.axios.get(`api/getTopicsInSubjects/${subjectId}`).then((res) => {
         this.topics = res.data;
         // console.log(res);
       });
