@@ -1,6 +1,6 @@
 <template>
   <div class="container">
-    <form @submit.prevent="addSubject" class>
+    <form @submit.prevent="addSubject">
       <div class="row">
         <div class="input-field col s6">
           <i class="material-icons prefix">account_circle</i>

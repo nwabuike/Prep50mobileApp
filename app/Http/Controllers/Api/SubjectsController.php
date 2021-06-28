@@ -36,7 +36,6 @@ class SubjectsController extends Controller
     public function getUserSubjects($user_id){
         return UserSubject::where('user_id', $user_id)->with(['activities' => function($query){ $query->orderBy('dateCompleted', 'desc')->limit(3); }])->get();
     }
-
     public function getOneSubject($id){
 
         $oneSubject = Subject::find($id);

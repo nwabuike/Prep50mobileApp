@@ -20,6 +20,7 @@
     <link href="{{ asset('css/materialize.min.css') }}" rel="stylesheet">
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
     <link href="{{ asset('css/prep50.css') }}" rel="stylesheet">
+    <script data-ad-client="ca-pub-6983526255410997" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 </head>
 <body>
     <div id="app">
